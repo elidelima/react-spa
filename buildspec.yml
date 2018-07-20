@@ -1,8 +1,7 @@
 phases:
   install:
     commands:
-      - echo not needed for now
-      
+      - echo not needed for now     
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -13,7 +12,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-
 artifacts:
   files:
     - package.json
