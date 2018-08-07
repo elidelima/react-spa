@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
@@ -7,7 +7,7 @@ import Contact from "./Contact";
 class Main extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div>
                     <h3>Simple SPA</h3>
                     <ul class="header">
@@ -22,7 +22,7 @@ class Main extends Component {
                         <Route path="/contact" component={Contact} />
                     </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
